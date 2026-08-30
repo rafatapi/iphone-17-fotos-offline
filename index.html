@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#17213b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Foto 17" />
+    <meta name="description" content="Manual prático e offline para fotografar com o iPhone 17 normal." />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" href="./icons/icon-192.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Foto 17 — manual prático</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Início"><span class="brand-mark">17</span><span>Foto de Bolso</span></a>
+      <button class="install-button" id="installButton" hidden>Instalar</button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <span class="eyebrow">iPhone 17 • modelo normal</span>
+          <h1>Fotos lindas, sem complicação.</h1>
+          <p>Um manual visual para escolher a lente certa, acertar foco e luz e registrar cada momento — mesmo sem internet.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#receitas">Escolher uma situação</a>
+            <a class="button secondary" href="#primeiros">Começar do zero</a>
+          </div>
+          <ul class="hero-chips" aria-label="Destaques"><li>0,5x • 1x • 2x</li><li>48 MP</li><li>Fotos e vídeos</li></ul>
+        </div>
+        <figure class="hero-visual"><img src="./images/hero-iphone17.png" alt="iPhone 17 normal em um estúdio fotográfico" /><figcaption>Feito especialmente para o iPhone 17 com duas câmeras traseiras.</figcaption></figure>
+      </section>
+
+      <section class="section quick-start" id="primeiros">
+        <div class="section-title"><span class="step-number">01</span><div><span class="eyebrow">Antes de fotografar</span><h2>A receita que resolve 80% das fotos</h2></div></div>
+        <div class="steps-grid">
+          <article class="step-card"><span>1</span><h3>Limpe as lentes</h3><p>Uma camiseta macia já remove gordura. Luzes “embaçadas” quase sempre são lente suja.</p></article>
+          <article class="step-card"><span>2</span><h3>Comece no 1x</h3><p>É a opção mais equilibrada. Use 0,5x para caber mais e 2x para aproximar sem chegar perto.</p></article>
+          <article class="step-card"><span>3</span><h3>Toque no assunto</h3><p>Toque no rosto, animal ou objeto principal. O quadrado amarelo confirma foco e exposição.</p></article>
+          <article class="step-card"><span>4</span><h3>Ajuste a luz</h3><p>Ao lado do foco, arraste o pequeno sol para baixo se o céu estiver branco; para cima se estiver escuro.</p></article>
+          <article class="step-card"><span>5</span><h3>Firme e fotografe</h3><p>Apoie os cotovelos, prenda a respiração por um instante e toque suavemente no disparador.</p></article>
+        </div>
+        <aside class="gold-tip"><strong>Atalho:</strong> na tela bloqueada, deslize para a esquerda. Você chega à câmera sem perder o momento.</aside>
+      </section>
+
+      <section class="section lenses" id="lentes">
+        <div class="section-title"><span class="step-number">02</span><div><span class="eyebrow">Enquadramento</span><h2>Qual número usar?</h2></div></div>
+        <figure class="wide-photo"><img src="./images/lentes-05-1-2.png" alt="A mesma praça fotografada em 0,5x, 1x e 2x" /><figcaption>Mesma posição: 0,5x mostra o lugar, 1x conta a cena, 2x destaca a pessoa.</figcaption></figure>
+        <div class="lens-grid">
+          <article class="lens-card mint"><b>0,5x</b><h3>Ultra-angular</h3><p>Paisagens, interiores apertados, prédios e grupos.</p><small>Evite rostos nas bordas: eles podem ficar esticados.</small></article>
+          <article class="lens-card lavender"><b>1x</b><h3>Principal 48 MP</h3><p>A melhor escolha geral, principalmente com pouca luz.</p><small>Dê dois passos para ajustar a composição antes de usar zoom.</small></article>
+          <article class="lens-card coral"><b>2x</b><h3>Aproximação óptica</h3><p>Retratos, detalhes, comida e assuntos mais distantes.</p><small>É um recorte de alta qualidade da câmera principal; precisa de um pouco mais de luz.</small></article>
+        </div>
+        <div class="warning"><strong>Zoom 3x a 10x:</strong> é digital. Use só quando não puder se aproximar; segure firme e espere boa luz.</div>
+      </section>
+
+      <section class="section recipes" id="receitas">
+        <div class="section-title"><span class="step-number">03</span><div><span class="eyebrow">Guia de bolso</span><h2>O que você vai fotografar?</h2></div></div>
+        <div class="recipe-tabs" role="tablist" aria-label="Situações de fotografia"></div>
+        <article class="recipe-panel" id="recipePanel" aria-live="polite"></article>
+      </section>
+
+      <section class="section camera-control" id="controle">
+        <div class="section-title"><span class="step-number">04</span><div><span class="eyebrow">Botão lateral</span><h2>Camera Control sem mistério</h2></div></div>
+        <div class="control-layout">
+          <div class="phone-control" aria-hidden="true"><div class="phone-screen"><span>1x</span><i></i></div><div class="control-key"></div></div>
+          <ol class="control-steps">
+            <li><b>Clique uma vez</b><span>abre a Câmera; clique novamente para fotografar.</span></li>
+            <li><b>Pressione levemente duas vezes</b><span>abre os ajustes como zoom, câmeras, exposição, profundidade e estilos.</span></li>
+            <li><b>Deslize sobre o controle</b><span>muda o valor; pressione levemente para escolher.</span></li>
+            <li><b>Prefere a tela?</b><span>sem problema: todos os controles continuam disponíveis pelo aplicativo.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section gallery" id="galeria">
+        <div class="section-title"><span class="step-number">05</span><div><span class="eyebrow">Veja o resultado</span><h2>Inspiração com a técnica ao lado</h2></div></div>
+        <div class="photo-grid">
+          <figure class="photo-card large"><img src="./images/retrato.png" alt="Retrato ao pôr do sol" loading="lazy" /><figcaption><b>Retrato • 2x</b><span>Foque nos olhos e reduza um pouco a luz.</span></figcaption></figure>
+          <figure class="photo-card"><img src="./images/macro.png" alt="Joaninha em uma folha com gotas" loading="lazy" /><figcaption><b>Macro • 0,5x automático</b><span>Chegue devagar e toque no detalhe.</span></figcaption></figure>
+          <figure class="photo-card"><img src="./images/movimento.png" alt="Cachorro correndo na praia" loading="lazy" /><figcaption><b>Ação • sequência</b><span>Arraste o disparador para a esquerda.</span></figcaption></figure>
+          <figure class="photo-card wide"><img src="./images/noite-cidade.png" alt="Rua iluminada à noite após a chuva" loading="lazy" /><figcaption><b>Noite • 1x</b><span>Apoie o aparelho e espere o contador terminar.</span></figcaption></figure>
+          <figure class="photo-card"><img src="./images/comida.png" alt="Café da manhã próximo à janela" loading="lazy" /><figcaption><b>Comida • 1x</b><span>Luz lateral de janela e nada de flash.</span></figcaption></figure>
+          <figure class="photo-card"><img src="./images/selfie.png" alt="Selfie de quatro amigos no litoral" loading="lazy" /><figcaption><b>Selfie em grupo</b><span>A câmera frontal amplia e enquadra o grupo.</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="section video" id="video">
+        <div class="section-title"><span class="step-number">06</span><div><span class="eyebrow">Movimento e som</span><h2>Vídeos que parecem profissionais</h2></div></div>
+        <div class="video-layout">
+          <figure class="wide-photo"><img src="./images/video-dual.png" alt="Pessoa filmando uma cachoeira com captura dupla" loading="lazy" /><figcaption>Captura Dupla grava a cena e sua reação ao mesmo tempo.</figcaption></figure>
+          <div class="video-cards">
+            <article><b>4K • 30 qps</b><p>Melhor padrão para viagens, família e redes sociais.</p></article>
+            <article><b>Ação</b><p>Para caminhar ou correr filmando. Precisa de boa luz e chega a 2,8K/60.</p></article>
+            <article><b>Cinema</b><p>Desfoca o fundo e troca o foco. Use 4K/30 em cenas planejadas.</p></article>
+            <article><b>Câmera Lenta</b><p>Ótima para água, esporte e animais: 1080p em 120 ou 240 qps.</p></article>
+            <article><b>Captura Dupla</b><p>Em Vídeo, abra os controles e ative o ícone com duas pessoas/câmeras.</p></article>
+            <article><b>Foto durante vídeo</b><p>Toque no botão branco ao lado do vermelho sem interromper a gravação.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section settings" id="ajustes">
+        <div class="section-title"><span class="step-number">07</span><div><span class="eyebrow">Uma vez só</span><h2>Ajustes que valem a pena</h2></div></div>
+        <div class="settings-list">
+          <article><div><b>Grade e Nível</b><span>Ajustes › Câmera › ative Grade e Nível</span></div><p>Ajuda a deixar horizontes retos e a usar a regra dos terços.</p></article>
+          <article><div><b>24 MP no dia a dia</b><span>Ajustes › Câmera › Formatos › Modo Foto</span></div><p>Excelente detalhe com arquivos menores. Use 48 MP em paisagens com muita luz e quando quiser recortar depois.</p></article>
+          <article><div><b>Sequência no volume +</b><span>Ajustes › Câmera › Usar Aumentar Volume p/ Série</span></div><p>Segure o botão para registrar ação rápida sem perder o melhor instante.</p></article>
+          <article><div><b>Preservar Ajustes</b><span>Ajustes › Câmera › Preservar Ajustes</span></div><p>Faça a câmera lembrar modo, exposição, Live Photo e outros controles que você prefere.</p></article>
+          <article><div><b>Alta Eficiência</b><span>Ajustes › Câmera › Formatos</span></div><p>Economiza espaço e permite editar depois os Estilos Fotográficos de última geração.</p></article>
+        </div>
+      </section>
+
+      <section class="section edit" id="editar">
+        <div class="section-title"><span class="step-number">08</span><div><span class="eyebrow">Acabamento</span><h2>Uma edição simples em 30 segundos</h2></div></div>
+        <div class="edit-flow"><span>1. Fotos › Editar</span><i>→</i><span>2. Endireitar e cortar</span><i>→</i><span>3. Baixar Realces</span><i>→</i><span>4. Subir Sombras</span><i>→</i><span>5. Comparar e OK</span></div>
+        <div class="two-tips"><p><b>Retrato depois:</b> fotos de pessoas, cães e gatos podem guardar profundidade; toque em Retrato na edição para desfocar o fundo.</p><p><b>Live Photo:</b> em Editar, escolha outro quadro-chave quando alguém piscou. Também há efeitos Loop, Vai e Volta e Longa Exposição.</p></div>
+      </section>
+
+      <section class="section rescue" id="socorro">
+        <div class="section-title"><span class="step-number">09</span><div><span class="eyebrow">Socorro rápido</span><h2>Por que minha foto ficou assim?</h2></div></div>
+        <details><summary>Está tremida ou sem nitidez</summary><p>Limpe a lente, volte ao 1x, toque no assunto e apoie o telefone. À noite, espere o contador terminar.</p></details>
+        <details><summary>O rosto ficou estranho</summary><p>Saia do 0,5x, use 1x ou 2x e mantenha a pessoa longe das bordas. Não fotografe muito perto do rosto.</p></details>
+        <details><summary>O céu ficou todo branco</summary><p>Toque no céu claro e arraste o sol para baixo. Se o rosto escurecer demais, procure uma sombra iluminada.</p></details>
+        <details><summary>A lua virou uma bolinha branca</summary><p>Use 2x, apoie o iPhone, toque na lua e abaixe bastante o sol. A lente normal não entrega o mesmo detalhe de uma teleobjetiva longa; inclua prédios ou árvores na composição.</p></details>
+        <details><summary>O zoom ficou “pintado”</summary><p>Você provavelmente passou do 2x. Aproxime-se fisicamente, fotografe em 2x com boa luz ou faça a imagem em 1x/48 MP e recorte depois.</p></details>
+      </section>
+
+      <section class="section install" id="offline">
+        <div><span class="eyebrow">Leve no bolso</span><h2>Instale para usar sem internet</h2><p>No Safari, toque em <b>Compartilhar</b>, depois em <b>Adicionar à Tela de Início</b> e confirme em <b>Adicionar</b>. Abra uma vez conectado para salvar todo o manual.</p></div>
+        <div class="share-icon" aria-hidden="true">↑<span></span></div>
+      </section>
+
+      <section class="sources" id="fontes"><h2>Informações e limites</h2><p>Conteúdo elaborado a partir das especificações e do Guia do Usuário oficiais da Apple. As imagens são demonstrações fotográficas realistas criadas para ensino. Este é um guia independente, não afiliado à Apple.</p><div class="source-links"><a href="https://www.apple.com/iphone-17/specs/" target="_blank" rel="noreferrer">Especificações</a><a href="https://support.apple.com/guide/iphone/iphone-17-iph15f87b8cf/ios" target="_blank" rel="noreferrer">Guia do iPhone 17</a><a href="https://support.apple.com/guide/iphone/take-great-photos-and-videos-iph9bbc8619e/ios" target="_blank" rel="noreferrer">Fotos e vídeos</a></div></section>
+    </main>
+
+    <nav class="dock" aria-label="Navegação principal"><a href="#inicio"><span>⌂</span>Início</a><a href="#lentes"><span>◎</span>Lentes</a><a href="#receitas"><span>✦</span>Receitas</a><a href="#socorro"><span>?</span>Socorro</a></nav>
+    <script src="./app.js"></script>
+  </body>
+</html>
